@@ -20,7 +20,9 @@ function CategoriesScreen({navigation}){
         // console.log('RenderCategoryItem')
         function pressHandler(){
             // console.log('pressHandler')
-            navigation.navigate('MealsOverview');
+            navigation.navigate('MealsOverview', {
+                categoryId: itemData.item.id,
+            });
         }
 
         return(
